@@ -5,43 +5,33 @@
     See https://single-spa.js.org/docs/layout-definition/ for more information.
 
   -->
-
-  <!-- Example layouts you might find helpful:
-
-  <nav>
-    <application name="@org/navbar"></application>
-  </nav>
-  <route path="settings">
-    <application name="@org/settings"></application>
-  </route>
-
-  -->
-
-  <nav>
-    <ul>
-      <li>
-        <a href="/" onClick="singleSpaNavigate(event)">home</a>
-      </li>
-      <li>
-        <a href="/aurora" onClick="singleSpaNavigate(event)">aurora</a>
-      </li>
-      <li>
-        <a href="/csats" onClick="singleSpaNavigate(event)">c-sats</a>
-      </li>
-    </ul>
-  </nav>
-  <main>
-    <route path="/aurora">
-      <application name="@rad/hd-aurora"></application>
-    </route>
-    <route path="/csats">
-      <application name="@rad/hd-csats"></application>
-    </route>
-    <route path="/" exact>
-      <application name="@rad/hd-common"></application>
-    </route>
-    <route default>
-      <h1>404 Not Found</h1>
-    </route>
-  </main>
+  <div class="container">
+    <nav class="navbar">
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link" href="/" onClick="singleSpaNavigate(event)">home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/aurora" onClick="singleSpaNavigate(event)">aurora</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/csats" onClick="singleSpaNavigate(event)">c-sats</a>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <route path="/aurora">
+        <application name="@rad/hd-aurora"></application>
+      </route>
+      <route path="/csats">
+        <application name="@rad/hd-csats"></application>
+      </route>
+      <route path="/" exact>
+        <application name="@rad/hd-common"></application>
+      </route>
+      <route default>
+        <h1>404 Not Found</h1>
+      </route>
+    </main>
+  </div>
 </single-spa-router>
