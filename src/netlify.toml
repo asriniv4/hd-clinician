@@ -1,0 +1,10 @@
+[[redirects]]
+  from = "/main.js"
+  to = "https://chic-pegasus-95a7f3.netlify.app/js/app.053a2b96.js"
+  status = 200
+  force = true
+  headers = {X-From = "Netlify"}
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Access-Control-Allow-Origin = "*"
