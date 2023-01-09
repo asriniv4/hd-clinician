@@ -17,9 +17,31 @@
 
   -->
 
+  <nav>
+    <ul>
+      <li>
+        <a href="/" onClick="singleSpaNavigate(event)">home</a>
+      </li>
+      <li>
+        <a href="/aurora" onClick="singleSpaNavigate(event)">aurora</a>
+      </li>
+      <li>
+        <a href="/csats" onClick="singleSpaNavigate(event)">c-sats</a>
+      </li>
+    </ul>
+  </nav>
   <main>
-    <route default>
+    <route path="/aurora">
       <application name="@rad/hd-aurora"></application>
+    </route>
+    <route path="/csats" exact>
+      <application name="@rad/hd-csats"></application>
+    </route>
+    <route path="/" exact>
+      <application name="@rad/hd-common"></application>
+    </route>
+    <route default>
+      <h1>404 Not Found</h1>
     </route>
   </main>
 </single-spa-router>
