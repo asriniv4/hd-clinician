@@ -5,6 +5,8 @@ import {
   constructLayoutEngine,
 } from "single-spa-layout";
 import microfrontendLayout from "./microfrontend-layout.html";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap";
 
 const routes = constructRoutes(microfrontendLayout);
 const applications = constructApplications({

@@ -36,8 +36,10 @@
     "webpack-merge": "^5.8.0"
   },
   "dependencies": {
+    "@popperjs/core": "^2.11.6",
     "@types/jest": "^27.0.1",
     "@types/systemjs": "^6.1.1",
+    "bootstrap": "^5.2.3",
     "single-spa": "^5.9.3",
     "single-spa-layout": "^1.6.0"
   }
