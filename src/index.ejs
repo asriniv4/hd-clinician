@@ -6,9 +6,6 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Clinician Portal</title>
 
-  <!-- Bootstrap 5 -->  
-  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
-
   <!--
     Remove this if you only support browsers that support async/await.
     This is needed by babel to share largeish helper code for compiling async/await in older
@@ -41,9 +38,12 @@
     {
       "imports": {
         "single-spa": "https://cdn.jsdelivr.net/npm/single-spa@5.9.0/lib/system/single-spa.min.js",
+        "@rad/hd-nav": "https://nav.ismorebetter.com/js/app.5409a30f.js",
         "@rad/hd-common": "https://common.ismorebetter.com/js/app.5af8350a.js",
         "@rad/hd-aurora": "https://aurora.ismorebetter.com/js/app.3b266ae4.js",
+        "@rad/hd-image-viewer": "https://imageviewer.ismorebetter.com/js/app.3b266ae4.js",
         "@rad/hd-csats": "https://csats.ismorebetter.com/js/app.415c0438.js",
+        "@rad/hd-messaging": "https://messaging.ismorebetter.com/js/app.3b266ae4.js",
         "@rad/root-config": "https://clinician.ismorebetter.com/rad-root-config.js"
       }
     }
@@ -57,9 +57,12 @@
   <script type="systemjs-importmap">
     {
       "imports": {
+        "@rad/hd-nav": "//localhost:8083/js/app.js",
         "@rad/hd-common": "//localhost:8080/js/app.js",
         "@rad/hd-aurora": "//localhost:8081/js/app.js",
+        "@rad/hd-image-viewer": "//localhost:8084/js/app.js",
         "@rad/hd-csats": "//localhost:8082/js/app.js",
+        "@rad/hd-messaging": "//localhost:8085/js/app.js",
         "@rad/root-config": "//localhost:9000/rad-root-config.js"
       }
     }
@@ -91,7 +94,5 @@
   </script>
   <import-map-overrides-full show-when-local-storage="devtools" dev-libs></import-map-overrides-full>
 
-  <!-- Bootstrap 5 JavaScript -->
-  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
 </body>
 </html>

@@ -6,25 +6,21 @@
 
   -->
   <div class="container">
-    <nav class="navbar">
-      <ul class="nav">
-        <li class="nav-item">
-          <a class="nav-link" href="/" onClick="singleSpaNavigate(event)">home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/aurora" onClick="singleSpaNavigate(event)">aurora</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/csats" onClick="singleSpaNavigate(event)">c-sats</a>
-        </li>
-      </ul>
+    <nav>
+      <application name="@rad/hd-nav"></application>
     </nav>
     <main>
       <route path="/aurora">
         <application name="@rad/hd-aurora"></application>
       </route>
+      <route path="/imageviewer">
+        <application name="@rad/hd-image-viewer"></application>
+      </route>
       <route path="/csats">
         <application name="@rad/hd-csats"></application>
+      </route>
+      <route path="/messaging">
+        <application name="@rad/hd-messaging"></application>
       </route>
       <route path="/" exact>
         <application name="@rad/hd-common"></application>
