@@ -24,5 +24,7 @@ module.exports = (webpackConfigEnv, argv) => {
         },
       }),
     ],
+    // Externals
+    externals: [/^@rad\/.+$/],
   });
 };
