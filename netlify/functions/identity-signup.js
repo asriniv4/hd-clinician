@@ -1,8 +1,7 @@
 exports.handler = async function (event, context) {
-  const { identity, user } = context.clientContext;
   console.log('identity-signup!')
-  console.log(identity);
-  console.log(user);
+  console.log(event);
+  console.log(context);
   return {
     statusCode: 200,
     headers: {
